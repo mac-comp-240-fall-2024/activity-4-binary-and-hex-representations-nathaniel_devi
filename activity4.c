@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
+// Devi Naum and Nathaniel Pranata
+
 // Include the header file containing the prototypes (declarations) of
 // functions defined in the helper file binary_convert.c
 #include "binary_convert.h"
@@ -40,11 +42,11 @@ void print_all_pos_bytes() {
         // TODO: call conversion function to make string rep for binary
         
     	// TODO: add to this print statement to print both hex and binary
-	    printf("Decimal: %hhu | Hex:  | Binary: \n", i);
+	    printf("Decimal: %03hhu | Hex:  | Binary: \n", i);
 
     	// We need this to manage memory--remember that each memory allocation
     	// requires a matching free()!
-    	free(bin_str);
+    	// free(bin_str);
 
         // Stops the loop
        	if (i == UCHAR_MAX)
